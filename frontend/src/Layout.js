@@ -1,5 +1,4 @@
 import React          from 'react';
-import mainBackground from './assets/images/linkImages/mainBackground.png';
 
 const Layout = (props) => {
 

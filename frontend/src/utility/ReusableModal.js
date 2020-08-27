@@ -40,7 +40,6 @@ export default function TransitionsModal(props) {
     sethover(!hover)
   }
 
-  console.log(props.link)
 
   return (
     <div onMouseOver={handleHover} onMouseLeave={handleLeave}>

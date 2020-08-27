@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react'
-import { Link }   from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link }            from 'react-router-dom'
 
-import bottle0    from '../../assets/images/waypoint/bottle1.png'
-import bottle1    from '../../assets/images/waypoint/bottle2.png'
-import bottle2    from '../../assets/images/waypoint/bottle3.png'
-import bottle3    from '../../assets/images/waypoint/bottle4.png'
-import bottle4    from '../../assets/images/waypoint/bottle5.png'
+import bottle0             from '../../assets/images/waypoint/bottle1.png'
+import bottle1             from '../../assets/images/waypoint/bottle2.png'
+import bottle2             from '../../assets/images/waypoint/bottle3.png'
+import bottle3             from '../../assets/images/waypoint/bottle4.png'
+import bottle4             from '../../assets/images/waypoint/bottle5.png'
 
-import leftSign   from '../../assets/images/waypoint/signLeft.png'
-import rightSign  from '../../assets/images/waypoint/signRight.png'
-import arrowLeft  from '../../assets/images/waypoint/arrowLeft.png'
-import arrowRight from '../../assets/images/waypoint/arrowRight.png'
+import leftSign            from '../../assets/images/waypoint/signLeft.png'
+import rightSign           from '../../assets/images/waypoint/signRight.png'
+import arrowLeft           from '../../assets/images/waypoint/arrowLeft.png'
+import arrowRight          from '../../assets/images/waypoint/arrowRight.png'
 
-import ReusableModal from '../../utility/ReusableModal'
+import ReusableModal       from '../../utility/ReusableModal'
 
 
 const ProjectLayout = (  ) => {

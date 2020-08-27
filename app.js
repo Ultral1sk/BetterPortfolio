@@ -55,10 +55,10 @@ app.post('/contact', (req, res) => {
   
   transporter.sendMail(mailOptions, function ( err, res ) {
     if( err ) {
-      console.log(`Error`, err);
+      return err
   
     } else{
-      console.log(`email snt`)
+      return
     }
   })
   res.json({status:'sent'});

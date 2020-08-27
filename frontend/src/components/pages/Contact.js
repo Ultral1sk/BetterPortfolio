@@ -1,4 +1,4 @@
-import React, {useState, useEffect }      from 'react'
+import React, { useState }                from 'react'
 import { Link }                           from 'react-router-dom'
 import axios                              from 'axios'
 
@@ -73,7 +73,6 @@ const Contact = () => {
   }
 
 
-  console.log(state)
 
   return (
     <div className=" main_contact_page_wrapper d-flex " >
