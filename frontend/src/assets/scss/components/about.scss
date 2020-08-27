@@ -1,0 +1,272 @@
+
+
+.left_sign_wrapper {
+  position: relative;
+
+  height: 100px;
+
+  @include breakpoint(biggerLaptop){
+    width: 100%;
+    height: 100%;
+  }
+  @include breakpoint(desktop){
+    width: 100%;
+    height: 100%;
+  }
+  @include breakpoint(biggerDesktop){
+    width: 100%;
+    height: 100%;
+  }
+
+  
+  .left_sign {
+    width: 250px;
+    height: 350px;
+
+  }
+  .sign_link-left {
+    font-size: 40px;
+    top: 70%;
+    left: 65px;
+    transform: rotate(12deg);
+    position: absolute;
+    color: white;
+    text-shadow: $mobile-text-shadow;
+
+    @include breakpoint(biggerLaptop) {
+      top: 80%;
+      left:  10px;
+    }
+    @include breakpoint(biggerDesktop) {
+      top: 70%;
+      left:  80px;
+    }
+
+    &:hover {
+      color : $keyword-color;
+      text-decoration: none;
+    }
+  }
+  
+}
+
+
+.left_side {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+
+  .left_scroll {
+    width: 100%;
+    height: 100%;
+    background: url('../../images/linkImages/scroll.png') center center no-repeat;
+    background-size: 100% 80%;
+    text-align: center;
+   
+  }
+
+  .left-scroll-styles {
+    color : white;
+    text-shadow: $mobile-text-shadow;
+    letter-spacing: 1px;
+    font-size: 18px;
+    width: 60%; 
+    margin: 0 auto;
+
+    @include breakpoint(smallLaptop) {
+      font-size: 35px;
+  
+      }
+    @include breakpoint(desktop) {
+      font-size: 25px;
+    
+    }
+    @include breakpoint(biggerLaptop) {
+      font-size: 25px;
+  
+      }
+   
+    @include breakpoint(biggerDesktop) {
+      font-size: 31px;
+  
+      }
+
+    h2 {
+      font-size: 45px;
+      @include breakpoint(smallLaptop) {
+        font-size: 75px;
+      }
+      @include breakpoint(desktop) {
+        font-size: 70px;
+      
+      }
+      @include breakpoint(biggerDesktop) {
+        font-size: 80px;
+      
+      }
+    }
+
+  }
+
+}
+
+
+.right_sign_wrapper {
+  position: relative;
+
+  height: 100px;
+
+  @include breakpoint(biggerLaptop){
+    width: 100%;
+    height: 100%;
+  }
+  @include breakpoint(desktop){
+    width: 100%;
+    height: 100%;
+  }
+  @include breakpoint(biggerDesktop){
+    width: 100%;
+    height: 100%;
+  }
+  .right_sign {
+    width: 250px;
+    height: 350px;
+    @include breakpoint(biggerLaptop) {
+      width: 200px;
+
+    }
+  }
+
+  /* sign link for desktop devices */
+  .sign_link-right {
+    font-size: 40px;
+    top: 70%;
+    left: 110px;
+    transform: rotate(-12deg);
+    position: absolute;
+    color: white;
+    text-shadow: $mobile-text-shadow;
+
+    @include breakpoint(biggerLaptop) {
+      font-size: 37px;
+      top: 80%;
+      left:  50px;
+    }
+    @include breakpoint(biggerDesktop) {
+      font-size: 35px;
+      top: 70%;
+      left:  135px;
+    }
+
+    &:hover {
+      color : $keyword-color;
+      text-decoration: none;
+    }
+  }
+  
+}
+
+
+
+.right_side {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .right_scroll {
+    width: 100%;
+    height: 100%;
+    background: url('../../images/linkImages/scroll.png') center center no-repeat;
+    background-size: 100% 80%;
+  }
+
+  .right-scroll-styles{
+
+    width: 80%;
+    position: absolute;
+    text-align: center;
+
+    
+    @include breakpoint(smallLaptop) { 
+      width: 60%;
+      font-size: 35px;
+    }
+    @include breakpoint(biggerLaptop) { 
+      width: 65%;
+      font-size: 28px;
+    }
+    @include breakpoint(desktop) { 
+      width: 65%;
+      font-size: 25px;
+    }
+    @include breakpoint(biggerDesktop) { 
+    
+      font-size: 30px;
+      div {
+        width: 55%;
+        margin: 0 auto;
+      }
+    }
+
+    h2 {
+      font-size: 55px;
+      @include breakpoint(smallLaptop) { 
+      font-size: 80px;
+
+      }
+      @include breakpoint(biggerLaptop) { 
+        font-size: 70px;
+  
+      }
+      @include breakpoint(desktop) { 
+          font-size: 70px;
+      }
+      @include breakpoint(biggerDesktop) { 
+        font-size: 80px;
+    }
+    }
+
+    .modifiedAvatar{
+      width: 80px;
+      height: 100%;
+      @include breakpoint(smallLaptop) { 
+        width: 120px;
+  
+        }
+      @include breakpoint(desktop) { 
+        width: 100px;
+    
+        }
+        @include breakpoint(biggerDesktop) { 
+          width: 110px;
+      
+          }
+    }
+    
+    .logo-styling{
+      width: 50px;
+      height: 100%;
+      @include breakpoint(smallLaptop) { 
+        width: 70px;
+  
+        }
+      @include breakpoint(biggerLaptop) { 
+        width: 50px;
+  
+        }
+      @include breakpoint(desktop) { 
+        width: 60px;
+    
+        }
+
+      @include breakpoint(biggerDesktop) { 
+        width: 65px;
+    
+        }
+    }
+
+  }
+}
+
+

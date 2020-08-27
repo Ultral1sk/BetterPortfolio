@@ -1,0 +1,140 @@
+.paper {
+  text-align: center;
+  display : flex ;
+  justify-content : center ;
+  align-items : center ;
+  flex-direction : column ;
+  width: 85% ;
+  height: 100% ;
+  background: url('../../images/linkImages/scrool2.png') center center no-repeat ;
+  background-size : 100% 150% ;
+
+  @include breakpoint(desktop) {
+    width: 65% ;
+    background-size : 90% 150% ;
+
+  }
+  
+  @include breakpoint(biggerDesktop) {
+    width: 65% ;
+    background-size : 90% 150% ;
+
+  }
+  border : 0 ;
+  outline : none ;
+}    
+
+
+.description  {
+  text-align : start;
+  width:65%;
+  font-size : 12px;
+
+  @include breakpoint(smallLaptop) {
+    width:50%;
+    font-size : 22px;
+
+  }
+  @include breakpoint(biggerLaptop) {
+    width:50%;
+    font-size : 25px;
+
+  }
+  @include breakpoint(desktop) {
+    width:50%;
+    font-size : 25px;
+
+  }
+  @include breakpoint(biggerDesktop) {
+    width:50%;
+    font-size : 25px;
+
+  }
+  margin : 0 auto;
+  color : white;
+  text-shadow: $mobile-text-shadow;
+  letter-spacing: 1px;
+  padding: 0.5rem 1rem;
+}
+.onMouseOver {
+  color: rgb(0, 172, 37);
+  text-shadow: $mobile-text-shadow;
+}
+
+#modal-btn-styles {
+  padding: 8rem;
+  outline : none;
+  font-size : 30px;
+  position: relative;
+
+
+
+  @include breakpoint(smallLaptop) {
+    padding : 8rem 4rem;
+
+
+  }
+
+  @include breakpoint(biggerLaptop) {
+    font-size : 17px;
+    letter-spacing: 2.5px;
+
+  }
+  @include breakpoint(desktop) {
+    padding : 6rem 6rem;
+    font-size :20px;
+    letter-spacing: 2.5px;
+
+  }
+  @include breakpoint(biggerDesktop) {
+    padding : 7rem 5rem;
+    font-size :25px;
+    letter-spacing: 2.5px;
+
+  }
+
+}
+
+.throw-btn {
+  background-color: rgba(128, 128, 128, 0.671);
+  border: none;
+  margin: 2rem ;
+  padding: 0.5rem 1rem;
+  outline : none,
+}
+
+.bottleFour {
+  color: white !important;
+  text-shadow: $mobile-text-shadow;
+
+}
+.bottleThree {
+  color: white !important;
+  transform: rotate(-40deg) !important;
+  text-shadow: $mobile-text-shadow;
+
+}
+
+.bottleTwo {
+  color: white !important;
+  transform: rotate(40deg) !important;
+  text-shadow: $mobile-text-shadow;
+
+}
+
+
+.bottleOne{
+  color: white !important;
+  transform: rotate(-20deg) !important;
+  text-shadow: $mobile-text-shadow;
+
+}
+
+
+.bottleZero{
+  color: white !important;
+  transform: rotate(-80deg) !important;
+  text-shadow: $mobile-text-shadow;
+
+}
+

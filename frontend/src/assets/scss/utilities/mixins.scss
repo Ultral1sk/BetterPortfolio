@@ -1,0 +1,78 @@
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin opacity($opacity) {
+      opacity: $opacity;
+      $opacity-ie: $opacity * 100;
+      filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+
+@mixin breakpoint($medium) {
+  @if( $medium == mobile )  {
+           @media 
+    (min-width: 320px) 
+            and 
+    (max-width: 768px) 
+        { @content }
+  };
+
+  //For 1024 Resolution 
+  @if( $medium == smallLaptop )  {
+           @media 
+    (min-width: 768px) 
+            and 
+    (max-width: 1024px) 
+         { @content }
+  };
+  // STYLES GO HERE  
+
+  /* If you're looking to supply different graphics or choose different typography for the lower resolution iPad display, the media queries below will work. */  
+/* Orientation : Landscape */  
+  @if( $medium == tablet ) {
+        @media only screen   
+        and (orientation : landscape)   
+        and (-webkit-min-device-pixel-ratio: 1)  
+        and (min-device-width : 768px)   
+        and (max-device-width : 1024px)   
+        { /* STYLES GO HERE */} 
+  }
+
+
+  //For 1366 Resolution
+  @if( $medium == biggerLaptop )  {
+             @media 
+        (min-width: 1024px) 
+              and 
+        (max-width: 1366px) 
+
+          { @content }
+  };
+  // STYLES GO HERE  
+
+  //For 1366 DESKTOP
+  @if( $medium == desktop ) {
+              @media 
+        (min-width: 1366px)  
+                and 
+        (max-width: 1605px)  {
+              @content
+        }
+  };
+  // STYLES GO HERE
+
+  //For BIGGER DESKTOP
+  @if( $medium == biggerDesktop ) {
+              @media 
+        (min-width: 1605px)  
+           {
+              @content
+  }
+};
+// STYLES GO HERE
+}

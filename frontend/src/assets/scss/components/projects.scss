@@ -1,0 +1,146 @@
+.bottleBtn {
+
+  padding: 6rem 5rem;
+  background-size: 150% 150%;
+  border: none;
+  box-shadow: none;
+
+  @include breakpoint(biggerLaptop) {
+    padding:2rem 1rem;
+  }
+
+  .bottleContent {
+   text-shadow: 0 2px 4px #4e4e4e;
+    color: black;
+    transform: rotate(-45deg);
+    font-size : 30px;
+  }
+  
+  &:focus {
+    box-shadow: none;
+  }  
+
+}
+
+
+.startingTitle {
+  position: absolute;
+  bottom: 5%;
+  left: 7%;
+  color: white;
+  text-shadow: $main-text-shadow ;
+
+
+  @include breakpoint(smallLaptop) {
+  left: 15%;
+  top: 60%;
+  font-size : 60px;
+
+  }
+  @include breakpoint(smallLaptop) {
+    left: 8%;
+    top: 40%;
+    font-size : 80px;
+  
+    }
+    @include breakpoint(biggerLaptop) {
+      left: 20%;
+      top: 30%;
+      font-size : 70px;
+    
+      }
+      @include breakpoint(desktop) {
+        left: 25%;
+        top: 30%;
+        font-size : 70px;
+      
+        }
+        @include breakpoint(biggerDesktop) {
+          left: 35%;
+          top: 20%;
+          font-size : 70px;
+        
+          }
+}
+
+
+.main_project_items_wrapper {
+  width: 100%;
+
+  @include breakpoint(biggerLaptop) {
+    height: 95%;
+  }
+  @include breakpoint(desktop) {
+    height: 95%;
+  } 
+  @include breakpoint(biggerDesktop) {
+    height: 95%;
+  }
+}
+
+
+
+.project_sign_link-right {
+  font-size: 40px;
+  top: 70%;
+  left: 110px;
+  transform: rotate(-12deg);
+  position: absolute;
+  color: white;
+  text-shadow: $mobile-text-shadow;
+
+  @include breakpoint(biggerLaptop) {
+    font-size: 37px;
+    top: 79%;
+    left:  50px;
+  }
+
+  @include breakpoint(desktop) {
+    font-size: 37px;
+    top: 68.5%;
+    left:  90px;
+  }
+  @include breakpoint(biggerDesktop) {
+    font-size: 40px;
+    top: 68%;
+    left:  135px;
+  }
+
+  &:hover {
+    color : $keyword-color;
+    text-decoration: none;
+  }
+}
+
+
+.project_sign_link-left {
+  font-size: 40px;
+  top: 70%;
+  left: 110px;
+  transform: rotate(12deg);
+  position: absolute;
+  color: white;
+  text-shadow: $mobile-text-shadow;
+
+  @include breakpoint(biggerLaptop) {
+    font-size: 37px;
+    top: 79%;
+    left:  20px;
+  }
+  @include breakpoint(desktop) {
+    font-size: 37px;
+    top: 68.5%;
+    left:  35px;
+  }
+
+  @include breakpoint(biggerDesktop) {
+    font-size: 40px;
+    top: 68%;
+    left:  75px;
+  }
+
+  &:hover {
+    color : $keyword-color;
+    text-decoration: none;
+  }
+}
