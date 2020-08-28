@@ -61,7 +61,7 @@ app.post('/contact', (req, res) => {
       return
     }
   })
-  res.json({status:'sent'});
+  res.status(200).json({message : "email sent"});
 })
 
 

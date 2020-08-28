@@ -49,13 +49,13 @@ const Contact = () => {
      
         const request = await axios.post(`http://localhost:3001/contact`, state)
         .then(res => {
-  
           if( res.status === 200 ) {
-  
+       
             setSuccess('Email Sent Successfully')
             setDisabled(true)
             setstate({ name : "",  email : '', message : "" })
   
+            
             setTimeout(() => { 
   
               setSuccess('')  

@@ -73,7 +73,7 @@ const About = () => {
                           <span className="keyword"> Developer</span>,
                           <span className="keyword"> Teacher</span>,
                           <span className="keyword"> Gamer</span>,
-                          with a big sense of humor. insterested in 
+                          with a big sense of humor. interested in 
                           <span className="keyword"> frontend </span> and 
                           <span className="keyword"> backend </span>  development. 
                           Always eager to 
